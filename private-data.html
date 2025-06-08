@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Приватні дані | Лабораторна робота №3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <h1>Приватні дані</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про проект</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="private-data.html">Приватні дані</a></li>
+                <li><a href="internal-info.html">Внутрішня інформація</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="captcha-gate">
+            <h2>Доступ до конфіденційних даних</h2>
+            <p>Ця сторінка містить конфіденційну інформацію та не повинна індексуватися.</p>
+            <p>Для доступу підтвердіть, що ви не робот:</p>
+            
+            <form id="access-form">
+                <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                <button type="button" onclick="verifyRecaptcha()">Отримати доступ</button>
+            </form>
+        </section>
+        
+        <section id="private-content" style="display: none;">
+            <h2>Конфіденційна інформація</h2>
+            <div class="secret-data">
+                <p>Тестовий пароль: L@b3_S3cr3t_P@ssw0rd</p>
+                <p>Тестова конфіденційна інформація: Це приховані дані, які не повинні з'являтися в результатах пошуку Google</p>
+                <p>Тестовий секретний ключ API: API_KEY_12345678_ABCDEFGH</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 Лабораторна робота №3 з веб-безпеки</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
