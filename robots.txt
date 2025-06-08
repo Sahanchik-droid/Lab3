@@ -4,6 +4,7 @@ Allow: /index.html
 Allow: /about.html
 Allow: /contact.html
 Allow: /css/style.css
+Allow: /js/script.js
 
 Disallow: /private-data.html
 Disallow: /internal-info.html
