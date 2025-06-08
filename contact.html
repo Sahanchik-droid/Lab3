@@ -6,6 +6,7 @@
     <meta name="description" content="Контактна сторінка лабораторної роботи">
     <title>Контакти | Лабораторна робота №3</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Load reCAPTCHA v2 API -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
@@ -43,7 +44,11 @@
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
                 
-                <div class="g-recaptcha" data-sitekey="6Lecg1krAAAAAOPZvK-mOpYYAnLE7YlgeYcXvI7j"></div>
+                <!-- Add visible reCAPTCHA widget -->
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6LeyhVkrAAAAAH9VajmmhDXd40Tq2VvR6sNQBP_l"></div>
+                </div>
+                
                 <div class="form-group">
                     <button type="submit">Надіслати</button>
                 </div>

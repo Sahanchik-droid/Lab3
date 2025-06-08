@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Function to verify reCAPTCHA and show private content
+// Function to verify reCAPTCHA on private data page
 function verifyRecaptcha() {
     const recaptchaResponse = grecaptcha.getResponse();
     

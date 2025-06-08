@@ -6,6 +6,7 @@
     <meta name="robots" content="noindex, nofollow">
     <title>Приватні дані | Лабораторна робота №3</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Load reCAPTCHA v2 API -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
@@ -29,7 +30,8 @@
             <p>Для доступу підтвердіть, що ви не робот:</p>
             
             <form id="access-form">
-                <div class="g-recaptcha" data-sitekey="6Lecg1krAAAAAOPZvK-mOpYYAnLE7YlgeYcXvI7j"></div>
+                <!-- Add visible reCAPTCHA widget -->
+                <div class="g-recaptcha" data-sitekey="6LeyhVkrAAAAAH9VajmmhDXd40Tq2VvR6sNQBP_l"></div>
                 <button type="button" onclick="verifyRecaptcha()">Отримати доступ</button>
             </form>
         </section>
